@@ -13,4 +13,11 @@ export class AppComponent {
 
   tabSta = [this.sta1, this.sta2]
 
+  supprimerStat(statASuppr: Statistique) {
+    let pos = this.tabSta.indexOf(statASuppr)
+    if (pos != -1) {
+      this.tabSta.splice(pos, 1)
+    }
+  }
+
 }

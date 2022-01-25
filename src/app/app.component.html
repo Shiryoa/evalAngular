@@ -1,5 +1,5 @@
 <div *ngFor="let stat of tabSta">
-  <app-statistique [stats]="stat"></app-statistique>
+  <app-statistique [stats]="stat" (demandeSuppression)="supprimerStat(stat)"></app-statistique>
 </div>
 
 <!-- <app-statistique [stats]="sta1"></app-statistique>
