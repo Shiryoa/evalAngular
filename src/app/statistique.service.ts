@@ -11,7 +11,7 @@ export class StatistiqueService {
   stats!: Statistique[];
 
   constructor(private http: HttpClient) {
-
+    this.recupStat();
   }
 
   recupStat() {
